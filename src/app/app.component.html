@@ -1,0 +1,22 @@
+<div class="content" role="main">
+  <signup-form></signup-form>
+  <hr />
+  <udemy-form></udemy-form>
+  <hr />
+  <contact-form></contact-form>
+  <hr />
+  <zippy title="Shipping Details"> Shipping Details Content </zippy>
+  <hr />
+  <input type="text" appInputFormat="'uppercase'" />
+  <hr />
+
+  <favorite [isFavorite]="post.isFavorite"></favorite>
+  <hr />
+
+  <p>Here are some links to help you get started:</p>
+  <input type="text" [(ngModel)]="titleCase" />
+  <hr />
+  {{ titleCase | titlePipe }}
+  <courses></courses>
+  <authors></authors>
+</div>
